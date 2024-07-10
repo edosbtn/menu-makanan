@@ -34,18 +34,21 @@ h1 {
     }
 
     .social-logos {
-        top: 70px; /* Pindahkan logo sosial ke bawah logo restoran */
-        right: 50%; /* Pusatkan logo sosial */
-        transform: translateX(50%);
-        flex-direction: column; /* Ubah arah flex menjadi kolom untuk menumpuk logo sosial */
+        top: 80px; /* Pindahkan logo sosial ke bawah logo restoran */
+        left: 50%; /* Pusatkan logo sosial */
+        transform: translateX(-50%);
+        flex-direction: row; /* Ubah arah flex menjadi baris untuk menumpuk logo sosial */
         align-items: center; /* Pusatkan logo sosial */
     }
 
     .social-logo {
-        margin: 5px 0; /* Beri jarak antar logo sosial */
+        margin: 0 5px; /* Beri jarak antar logo sosial */
+    }
+
+    h1 {
+        margin-top: 140px; /* Tambahkan lebih banyak margin atas untuk judul agar tidak tumpang tindih */
     }
 }
-
 
 .marquee-container {
     width: 100%;
@@ -68,8 +71,6 @@ h1 {
     100% { transform: translateX(-100%); }
 }
 
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -77,8 +78,6 @@ body {
     background-color: #f4f4f4;
     position: relative;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -112,4 +111,3 @@ li div span.price {
     font-weight: bold;
     color: #888;
 }
-
