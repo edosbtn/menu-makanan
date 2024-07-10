@@ -8,7 +8,14 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 500px; /* Atur spasi 500px di atas h1 */
+    margin-top: 80px; /* Atur spasi yang lebih besar di atas h1 */
+    margin-bottom: 20px; /* Atur spasi di bawah h1 */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        margin-top: 100px; /* Tambahkan margin lebih besar untuk layar kecil */
+    }
 }
 
 ul {
