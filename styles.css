@@ -34,11 +34,12 @@ h1 {
     }
 
     .social-logos {
-        top: 80px; /* Pindahkan logo sosial ke bawah logo restoran */
+        top: 100px; /* Pindahkan logo sosial ke bawah logo restoran */
         left: 50%; /* Pusatkan logo sosial */
         transform: translateX(-50%);
         flex-direction: row; /* Ubah arah flex menjadi baris untuk menumpuk logo sosial */
         align-items: center; /* Pusatkan logo sosial */
+        gap: 10px; /* Jarak antara logo sosial */
     }
 
     .social-logo {
@@ -46,7 +47,7 @@ h1 {
     }
 
     h1 {
-        margin-top: 140px; /* Tambahkan lebih banyak margin atas untuk judul agar tidak tumpang tindih */
+        margin-top: 160px; /* Tambahkan lebih banyak margin atas untuk judul agar tidak tumpang tindih */
     }
 }
 
