@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #f4f4f4;
+    position: relative;
 }
 
 h1 {
@@ -19,9 +20,68 @@ li {
     margin: 10px 0;
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
 }
 
-li span {
+li img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+li div {
+    flex-grow: 1;
+}
+
+li div span {
+    display: block;
+}
+
+li div span.price {
     float: right;
     font-weight: bold;
+    color: #888;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9; /* Warna latar belakang teks */
+    padding: 10px 20px; /* Padding di sekitar teks */
+    border-radius: 5px; /* Sudut lengkung */
+    margin-top: 20px; /* Jarak dari judul menu */
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+.restaurant-logo {
+    width: 150px; /* Sesuaikan lebar logo restoran */
+    position: absolute;
+    top: 10px; /* Jarak dari atas halaman */
+    left: 20px; /* Jarak dari kiri halaman */
+    z-index: 1000; /* Pastikan logo restoran muncul di atas konten lain */
+}
+
+.social-logos {
+    position: absolute;
+    top: 10px; /* Jarak dari atas halaman */
+    right: 20px; /* Jarak dari kanan halaman */
+    display: flex;
+    align-items: center;
+}
+
+.social-logo {
+    width: 40px; /* Sesuaikan ukuran logo sosial media */
+    margin-left: 10px; /* Jarak antara logo sosial media */
 }
