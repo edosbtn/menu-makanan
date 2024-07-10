@@ -18,6 +18,7 @@ h1 {
     }
 }
 
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -92,4 +93,19 @@ li div span.price {
 .social-logo {
     width: 40px; /* Sesuaikan ukuran logo sosial media */
     margin-left: 10px; /* Jarak antara logo sosial media */
+}
+
+/* Tambahkan aturan responsif */
+@media (max-width: 600px) {
+    .restaurant-logo {
+        top: 20px; /* Sesuaikan jarak dari atas untuk layar kecil */
+        left: 50%; /* Pusatkan logo restoran pada layar kecil */
+        transform: translateX(-50%);
+    }
+
+    .social-logos {
+        top: 70px; /* Pindahkan logo sosial ke bawah logo restoran */
+        right: 50%; /* Pusatkan logo sosial */
+        transform: translateX(50%);
+    }
 }
