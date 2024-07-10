@@ -8,14 +8,8 @@ body {
 
 h1 {
     text-align: center;
-    margin-top: 50px; /* Atur spasi yang lebih besar di atas h1 */
+    margin-top: 80px; /* Atur spasi yang lebih besar di atas h1 */
     margin-bottom: 20px; /* Atur spasi di bawah h1 */
-}
-
-@media (max-width: 600px) {
-    h1 {
-        margin-top: 100px; /* Tambahkan margin lebih besar untuk layar kecil */
-    }
 }
 
 
@@ -98,7 +92,7 @@ li div span.price {
 /* Tambahkan aturan responsif */
 @media (max-width: 600px) {
     .restaurant-logo {
-        top: 20px; /* Sesuaikan jarak dari atas untuk layar kecil */
+        top: 10px; /* Sesuaikan jarak dari atas untuk layar kecil */
         left: 50%; /* Pusatkan logo restoran pada layar kecil */
         transform: translateX(-50%);
     }
@@ -107,5 +101,11 @@ li div span.price {
         top: 70px; /* Pindahkan logo sosial ke bawah logo restoran */
         right: 50%; /* Pusatkan logo sosial */
         transform: translateX(50%);
+        flex-direction: column; /* Ubah arah flex menjadi kolom untuk menumpuk logo sosial */
+        align-items: center; /* Pusatkan logo sosial */
+    }
+
+    .social-logo {
+        margin: 5px 0; /* Beri jarak antar logo sosial */
     }
 }
