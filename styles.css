@@ -1,3 +1,75 @@
+.restaurant-logo {
+    width: 150px; /* Sesuaikan lebar logo restoran */
+    position: absolute;
+    top: 10px; /* Jarak dari atas halaman */
+    left: 20px; /* Jarak dari kiri halaman */
+    z-index: 1000; /* Pastikan logo restoran muncul di atas konten lain */
+}
+
+.social-logos {
+    position: absolute;
+    top: 10px; /* Jarak dari atas halaman */
+    right: 20px; /* Jarak dari kanan halaman */
+    display: flex;
+    align-items: center;
+}
+
+.social-logo {
+    width: 40px; /* Sesuaikan ukuran logo sosial media */
+    margin-left: 10px; /* Jarak antara logo sosial media */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px; /* Atur spasi yang lebih besar di atas h1 */
+    margin-bottom: 20px; /* Atur spasi di bawah h1 */
+}
+
+/* Tambahkan aturan responsif */
+@media (max-width: 600px) {
+    .restaurant-logo {
+        top: 10px; /* Sesuaikan jarak dari atas untuk layar kecil */
+        left: 50%; /* Pusatkan logo restoran pada layar kecil */
+        transform: translateX(-50%);
+    }
+
+    .social-logos {
+        top: 70px; /* Pindahkan logo sosial ke bawah logo restoran */
+        right: 50%; /* Pusatkan logo sosial */
+        transform: translateX(50%);
+        flex-direction: column; /* Ubah arah flex menjadi kolom untuk menumpuk logo sosial */
+        align-items: center; /* Pusatkan logo sosial */
+    }
+
+    .social-logo {
+        margin: 5px 0; /* Beri jarak antar logo sosial */
+    }
+}
+
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9; /* Warna latar belakang teks */
+    padding: 10px 20px; /* Padding di sekitar teks */
+    border-radius: 5px; /* Sudut lengkung */
+    margin-top: 20px; /* Jarak dari judul menu */
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,11 +78,6 @@ body {
     position: relative;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 80px; /* Atur spasi yang lebih besar di atas h1 */
-    margin-bottom: 20px; /* Atur spasi di bawah h1 */
-}
 
 
 ul {
@@ -46,66 +113,3 @@ li div span.price {
     color: #888;
 }
 
-.marquee-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    background-color: #f9f9f9; /* Warna latar belakang teks */
-    padding: 10px 20px; /* Padding di sekitar teks */
-    border-radius: 5px; /* Sudut lengkung */
-    margin-top: 20px; /* Jarak dari judul menu */
-}
-
-.marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
-
-.restaurant-logo {
-    width: 150px; /* Sesuaikan lebar logo restoran */
-    position: absolute;
-    top: 10px; /* Jarak dari atas halaman */
-    left: 20px; /* Jarak dari kiri halaman */
-    z-index: 1000; /* Pastikan logo restoran muncul di atas konten lain */
-}
-
-.social-logos {
-    position: absolute;
-    top: 10px; /* Jarak dari atas halaman */
-    right: 20px; /* Jarak dari kanan halaman */
-    display: flex;
-    align-items: center;
-}
-
-.social-logo {
-    width: 40px; /* Sesuaikan ukuran logo sosial media */
-    margin-left: 10px; /* Jarak antara logo sosial media */
-}
-
-/* Tambahkan aturan responsif */
-@media (max-width: 600px) {
-    .restaurant-logo {
-        top: 10px; /* Sesuaikan jarak dari atas untuk layar kecil */
-        left: 50%; /* Pusatkan logo restoran pada layar kecil */
-        transform: translateX(-50%);
-    }
-
-    .social-logos {
-        top: 70px; /* Pindahkan logo sosial ke bawah logo restoran */
-        right: 50%; /* Pusatkan logo sosial */
-        transform: translateX(50%);
-        flex-direction: column; /* Ubah arah flex menjadi kolom untuk menumpuk logo sosial */
-        align-items: center; /* Pusatkan logo sosial */
-    }
-
-    .social-logo {
-        margin: 5px 0; /* Beri jarak antar logo sosial */
-    }
-}
