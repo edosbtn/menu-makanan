@@ -7,11 +7,11 @@ const menuItems = [
     { name: "PUYUH", price: "Rp. 13,000", img: "puyuh.jpg" },
     { name: "KEPALA AYAM KAMPUNG (isi 2)", price: "Rp. 12,000", img: "kepala-ayam-kampung.jpg" },
     { name: "JEROAN (2 pasang)", price: "Rp. 13,000", img: "jeroan-rempela-ati.jpg" },
-    { name: "BELUT", price: "Rp. 12,000", img: "jeroan-rempela-ati.jpg" },    
-    { name: "KEPALA BEBEK (isi 2)", price: "Rp. 18,000", img: "jeroan-rempela-ati.jpg" },
-    { name: "TEMPE PENYET", price: "Rp. 6,000", img: "jeroan-rempela-ati.jpg" },
-    { name: "TEMPE TAHU PENYET", price: "Rp. 6,000", img: "jeroan-rempela-ati.jpg" },
-    { name: "SAMBAL TERONG", price: "Rp. 6,000", img: "jeroan-rempela-ati.jpg" }
+    { name: "BELUT", price: "Rp. 12,000", img: "" },    
+    { name: "KEPALA BEBEK (isi 2)", price: "Rp. 18,000", img: "" },
+    { name: "TEMPE PENYET", price: "Rp. 6,000", img: "" },
+    { name: "TEMPE TAHU PENYET", price: "Rp. 6,000", img: "" },
+    { name: "SAMBAL TERONG", price: "Rp. 6,000", img: "" }
 
 ];
 
