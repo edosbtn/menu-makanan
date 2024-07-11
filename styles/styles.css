@@ -1,0 +1,121 @@
+.restaurant-logo {
+    width: 150px; /* Sesuaikan lebar logo restoran */
+    position: absolute;
+    top: 10px; /* Jarak dari atas halaman */
+    left: 20px; /* Jarak dari kiri halaman */
+    z-index: 1000; /* Pastikan logo restoran muncul di atas konten lain */
+}
+
+.social-logos {
+    position: absolute;
+    top: 10px; /* Jarak dari atas halaman */
+    right: 20px; /* Jarak dari kanan halaman */
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Pastikan logo sosial muncul di atas konten lain */
+}
+
+.social-logo {
+    width: 40px; /* Sesuaikan ukuran logo sosial media */
+    margin-left: 10px; /* Jarak antara logo sosial media */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 80px; /* Atur spasi yang lebih besar di atas h1 */
+    margin-bottom: 20px; /* Atur spasi di bawah h1 */
+    z-index: 1000; /* Pastikan judul muncul di atas konten lain */
+}
+
+/* Tambahkan aturan responsif */
+@media (max-width: 600px) {
+    .restaurant-logo {
+        width: 100%; /* Perbesar lebar logo restoran */
+        max-width: 200px; /* Batasi maksimum lebar logo untuk menghindari keluar halaman */
+        top: 10px; /* Sesuaikan jarak dari atas untuk layar kecil */
+        left: 50%; /* Pusatkan logo restoran pada layar kecil */
+        transform: translateX(-50%);
+        z-index: 1000; /* Pastikan judul muncul di atas konten lain */
+    }
+
+    .social-logos {
+        top: 130px; /* Pindahkan logo sosial ke bawah logo restoran */
+        left: 40%; /* Pusatkan logo sosial */
+        transform: translateX(-50%);
+        flex-direction: row; /* Ubah arah flex mnjadi baris untuk menumpuk logo sosial */
+        align-items: center; /* Pusatkan logo sosial */
+        gap: 10px; /* Jarak antara logo sosial */
+        z-index: 1000; /* Pastikan judul muncul di atas konten lain */
+    }
+
+    .social-logo {
+        margin: 0 5px; /* Beri jarak antar logo sosial */
+    }
+
+    h1 {
+        margin-top: 160px; /* Tambahkan lebih banyak margin atas untuk judul agar tidak tumpang tindih */
+        z-index: 1000; /* Pastikan judul muncul di atas konten lain */
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9; /* Warna latar belakang teks */
+    padding: 10px 20px; /* Padding di sekitar teks */
+    border-radius: 5px; /* Sudut lengkung */
+    margin-top: 20px; /* Jarak dari judul menu */
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+li img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+li div {
+    flex-grow: 1;
+}
+
+li div span {
+    display: block;
+}
+
+li div span.price {
+    float: right;
+    font-weight: bold;
+    color: #888;
+}
