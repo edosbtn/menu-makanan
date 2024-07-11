@@ -12,6 +12,7 @@
     right: 20px; /* Jarak dari kanan halaman */
     display: flex;
     align-items: center;
+    z-index: 1000; /* Pastikan logo sosial muncul di atas konten lain */
 }
 
 .social-logo {
@@ -23,12 +24,14 @@ h1 {
     text-align: center;
     margin-top: 80px; /* Atur spasi yang lebih besar di atas h1 */
     margin-bottom: 20px; /* Atur spasi di bawah h1 */
+    z-index: 1000; /* Pastikan judul muncul di atas konten lain */
 }
 
 /* Tambahkan aturan responsif */
 @media (max-width: 600px) {
     .restaurant-logo {
-        width: 200px; /* Perbesar lebar logo restoran */
+        width: 100%; /* Perbesar lebar logo restoran */
+        max-width: 200px; /* Batasi maksimum lebar logo untuk menghindari keluar halaman */
         top: 10px; /* Sesuaikan jarak dari atas untuk layar kecil */
         left: 50%; /* Pusatkan logo restoran pada layar kecil */
         transform: translateX(-50%);
