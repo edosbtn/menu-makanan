@@ -38,7 +38,7 @@ h1 {
     }
 
     .social-logos {
-        top: 200px; /* Pindahkan logo sosial ke bawah logo restoran */
+        top: 175px; /* Pindahkan logo sosial ke bawah logo restoran */
         left: 40%; /* Pusatkan logo sosial */
         transform: translateX(-50%);
         flex-direction: row; /* Ubah arah flex menjadi baris untuk menumpuk logo sosial */
