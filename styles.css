@@ -35,6 +35,7 @@ h1 {
         top: 10px; /* Sesuaikan jarak dari atas untuk layar kecil */
         left: 50%; /* Pusatkan logo restoran pada layar kecil */
         transform: translateX(-50%);
+        z-index: 1000; /* Pastikan judul muncul di atas konten lain */
     }
 
     .social-logos {
